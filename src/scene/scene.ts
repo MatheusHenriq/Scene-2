@@ -113,7 +113,7 @@ sphereCtrls.addInput(sphere.position, "z", {
   step: 0.1,
 })
 
-sphereCtrls.addInput(PARAMS, "color").on("change", (e) => {
+sphereCtrls.addInput(PARAMS, "color").on("change", (e : any) => {
   sphere.material.color = new Color(e.value)
 })
 
